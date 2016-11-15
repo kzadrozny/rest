@@ -1,0 +1,91 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: #3a3a3c;
+    line-height: 1.3em;
+}
+
+p {
+    font-size: 1.05em;
+}
+
+.btn-default {
+    background-color: #36364b;
+    color: #ffffff;
+}
+
+.btn-default:hover {
+    color: #36364b;
+    background: #9fc3cc;
+}
+
+
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('../images/heart-banner.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    padding: 5em 0;
+    margin-bottom: 2em;
+}
+
+.headline h1 {
+    font-size: 5em;
+    padding-bottom: 0.2em;
+    color: #36364b;
+    background: #c3ebf8;
+    background: rgba(195,235,248,0.8);
+}
+
+.headline h2 {
+    font-size: 3em;
+    padding-bottom: 0.2em;
+    color: #36364b;
+    background: #c3ebf8;
+    background: rgba(195,235,248,0.8);
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media(min-width:640px) {
+    .col-md-4:nth-child(2) {
+        border-right: 1px solid #f1592a;
+        border-left: 1px solid #f1592a;
+    }
+    .donate-row {
+        padding-bottom: 3em;
+    }
+}
+

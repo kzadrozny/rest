@@ -1,5 +1,6 @@
 body {
     font-family: 'Didact Gothic', sans-serif;
+    color: #000000;
 }
 
 h2 {
@@ -9,7 +10,7 @@ h2 {
 }
 
 p {
-    font-size: 1.05em;
+    font-size: 1.1em;
 }
 
 .btn-default {
@@ -22,6 +23,29 @@ p {
     background: #9fc3cc;
 }
 
+p.notes {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.well.text-center {
+    color: #000000;
+    background: #f1592a;
+    background: rgba(241,89,42,0.1);
+    padding: 0.5em;
+}
+
+footer {
+    color: #000000;
+    background: #9fc3cc;
+    padding: 0.5em;   
+}
+
+footer a {
+    color: #20202d;
+    text-decoration: underline;
+}
 
 .header-image {
     display: block;
@@ -36,13 +60,13 @@ p {
 
 .headline {
     padding: 5em 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .headline h1 {
     font-size: 5em;
     padding-bottom: 0.2em;
-    color: #36364b;
+    color: #2b2b3c;
     background: #c3ebf8;
     background: rgba(195,235,248,0.8);
 }
@@ -50,7 +74,7 @@ p {
 .headline h2 {
     font-size: 3em;
     padding-bottom: 0.2em;
-    color: #36364b;
+    color: #2b2b3c;
     background: #c3ebf8;
     background: rgba(195,235,248,0.8);
 }
@@ -79,7 +103,15 @@ footer {
     margin: 50px 0;
 }
 
-@media(min-width:640px) {
+.col-md-4 {
+    border-bottom: 1px solid #f1592a;
+    padding-bottom: 1.5em;
+}
+
+@media(min-width:991px) {
+    .col-md-4 {
+        border-bottom: none;
+    }
     .col-md-4:nth-child(2) {
         border-right: 1px solid #f1592a;
         border-left: 1px solid #f1592a;

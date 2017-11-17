@@ -1,0 +1,190 @@
+/*
+ * Variables and Mixins
+ * --------------------------------------------------
+ */
+/*
+ * Media Queries
+ * --------------------------------------------------
+ *
+ * Use as: @include respond-to(small) { ... }
+ *		@include respond-to(medium) { ... }
+ *		@include respond-to(large) { ... }
+ */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+/*
+ * Navigation
+ * --------------------------------------------------
+ */
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; }
+  nav li {
+    float: left; }
+    nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 1.7em; }
+      @media (min-width: 48em) {
+        nav li a {
+          font-size: 1em; } }
+      nav li a:hover {
+        background-color: #111; }
+
+/*
+ * Content
+ * --------------------------------------------------
+ */
+span.hidden-xs {
+  display: none; }
+  @media (min-width: 62em) {
+    span.hidden-xs {
+      display: unset; } }
+
+.container {
+  margin: 1em; }
+
+.featurette-wrapper, .wrapper {
+  display: unset;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center; }
+  @media (min-width: 62em) {
+    .featurette-wrapper, .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
+
+.featurette {
+  flex: 1;
+  text-align: center;
+  padding: 10px; }
+  .featurette > a {
+    color: transparent; }
+    .featurette > a:hover > i {
+      color: #f1592a; }
+    .featurette > a:hover h2 {
+      background-color: rgba(195, 235, 248, 0.9); }
+
+.box, .wide-box {
+  flex: 1;
+  padding: 10px; }
+
+.wide-box {
+  grid-column: 1/4; }
+
+/*
+ * Fonts
+ * --------------------------------------------------
+ */
+.material-icons {
+  color: rgba(241, 89, 42, 0.8);
+  font-size: 5em;
+  display: block; }
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: #000000; }
+
+h2 {
+  font-size: 1.5em;
+  color: #3a3a3c;
+  line-height: 1.3em; }
+  h2.highlight {
+    font-size: 3em;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    margin: 0; }
+    h2.highlight:before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 14px;
+      background-color: rgba(195, 235, 248, 0.5);
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      z-index: -1; }
+    @media (min-width: 62em) {
+      h2.highlight {
+        font-size: 1.5em; } }
+
+/*
+ * Images and Buttons
+ * --------------------------------------------------
+ */
+img {
+  margin-bottom: 1em; }
+
+.btn-default {
+  background-color: #36364b;
+  color: #ffffff; }
+
+.btn-default:hover {
+  color: #36364b;
+  background: #9fc3cc; }
+
+p.notes {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.5em; }
+
+/*
+ * Hero
+ * --------------------------------------------------
+ */
+.header-image {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: url("../images/heart-banner.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.headline {
+  padding: 5em 0;
+  margin-bottom: 1em; }
+
+.headline h1 {
+  font-size: 3em;
+  padding-bottom: 0.2em;
+  color: #2b2b3c;
+  background: #c3ebf8;
+  background: rgba(195, 235, 248, 0.8); }
+
+.headline h2 {
+  font-size: 3em;
+  padding-bottom: 0.2em;
+  color: #2b2b3c;
+  background: #c3ebf8;
+  background: rgba(195, 235, 248, 0.8); }
+
+/*
+ * Footer
+ * --------------------------------------------------
+ */
+footer {
+  color: #000000;
+  background: #9fc3cc;
+  padding: 0.5em;
+  margin: 50px 0; }
+
+footer a {
+  color: #20202d;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
